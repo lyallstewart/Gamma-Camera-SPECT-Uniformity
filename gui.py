@@ -1,4 +1,3 @@
-# gui.py
 """The GUI for the gamma camera uniformity program
    Copyright (c) 2024 Alex Toogood-Johnson, Lyall Stewart, Josh Scates, Leah Wells, Zac Baker"""
 
@@ -300,9 +299,10 @@ class Gui(Tk):
     def change_fov_radius_callback(self) -> None:
         """Changes the field of view radius stored in the config file"""
         fov_rad = self.fov_radius_textbox.get("1.0", "end-1c")
-        if fov_rad.isdigit() and int(fov_rad) > 0 and int(fov_rad) < 100:
+        if fov_rad.isdigit() and int(fov_rad) > 0 and int(fov_rad) < 500:
             edit_config_file("fov_radius", int(fov_rad))
         else:
+            print("Invalid FoV Radius")
             self.fov_radius_textbox.delete("1.0", "end")
             self.fov_radius_textbox.insert("1.0", str(read_config_file("fov_radius")))
 

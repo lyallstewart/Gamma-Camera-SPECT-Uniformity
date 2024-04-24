@@ -21,6 +21,6 @@
         ]
     ],
     "crop_amount": 40,
-    "fov_radius": 80,
+    "fov_radius": 120,
     "step": 2
 }

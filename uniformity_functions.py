@@ -1,3 +1,6 @@
+# uniformity_functions.py
+"""Functions relating to uniformity calculations"""
+
 import numpy as np
 from PIL import Image, ImageDraw
 import concurrent.futures
