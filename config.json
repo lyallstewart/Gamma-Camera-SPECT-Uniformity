@@ -1,0 +1,26 @@
+{
+    "default_file_opening_directory": "C:/",
+    "default_file_saving_directory": "C:/",
+    "colour_theme": "System",
+    "colour": "blue",
+    "convolution": [
+        [
+            1,
+            2,
+            1
+        ],
+        [
+            2,
+            4,
+            2
+        ],
+        [
+            1,
+            2,
+            1
+        ]
+    ],
+    "crop_amount": 40,
+    "fov_radius": 80,
+    "step": 2
+}
